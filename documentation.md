@@ -66,6 +66,7 @@ HTTP 401 Unauthorized
   "statut": "Salarie(e) du privé",
   "theme": null,
   "domaine": null
+  "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id dui elit. Proin commodo nisi tincidunt quam dapibus dignissim. Phasellus nulla massa, rhoncus et lectus a, vulputate fringilla velit."
 }
 ```
 
@@ -85,6 +86,7 @@ HTTP 401 Unauthorized
 | `statut` | string | Oui | Statut professionnel du contact (voir valeurs ci-dessous) |
 | `theme` | string\|null | Non | Thème de formation (utilisé pour `type: "of"`) |
 | `domaine` | string\|null | Non | Domaine de recherche |
+| `comment` | text\|null | Non | Commentaire |
 
 ### Valeurs acceptées : `civilite`
 
@@ -202,6 +204,7 @@ curl -X POST https://votre-domaine.fr/api/resource/receive/contact \
     "distanciel": false,
     "type": "ace",
     "statut": "Salarie(e) du privé"
+    "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id dui elit. Proin commodo nisi tincidunt quam dapibus dignissim.   Phasellus nulla massa, rhoncus et lectus a, vulputate fringilla velit. "
   }'
 ```
 
